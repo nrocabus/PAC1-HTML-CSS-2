@@ -7,51 +7,106 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
-  padding: 2rem;
   font-family: $font-family-sans-serif;
   font-size: 16px;
   line-height: 24px;
-  background-color: $uoc-bg;
   color: $uoc-corporate;
+  background-color: $uoc-bg;
 }
 
 .uoc-container {
-  max-width: 800px;
-  margin: auto;
+  top:0;
+  max-width: 800px; 
   padding: 2rem;
-  border-radius: 2rem;
+  margin: auto;
   text-align: center;
   background-color: #fff;
+  border-radius: 2rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-.uoc-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
-  max-width: 200px;
-  height: auto;
+// .uoc-logo {
+//   display: block;
+//   max-width: 200px;
+//   height: auto;
+//   margin-right: auto;
+//   margin-bottom: 1.5rem;
+//   margin-left: auto;
 
-  @media (min-width: $mqMinWidth) {
+//   @media (min-width: $mqMinWidth) {
+//     max-width: none;
+//   }
+// }
+
+// .uoc-title {
+//   font-family: $font-family-serif;
+//   font-size: 24px;
+//   font-weight: 700;
+//   color: $uoc-corporate;
+
+//   @media (min-width: $mqMinWidth) {
+//     font-size: 36px;
+//   }
+// }
+
+// .uoc-footer {
+//   margin-top: 1.5rem;
+//   font-size: 0.75rem;
+//   text-align: center;
+// }
+
+
+
+
+
+
+////////////////////////////////////
+
+@media (max-width: $mqMinWidth){
+  .content{
     max-width: none;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
   }
-}
-
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: $uoc-corporate;
-
-  @media (min-width: $mqMinWidth) {
-    font-size: 36px;
+  .header{
+    min-height: 300px;
   }
-}
+  .cover{
+    width: 100%;
+    height:100%;
+    max-height: 600px;
+    background: $grad-test-3;
+  }
 
-.uoc-footer {
-  margin-top: 1.5rem;
-  font-size: 0.75rem;
-  text-align: center;
+  .cover__title{
+    font-size: 2rem;
+  }
+
+  .history{
+    min-height: 200px;
+    background: $grad-test-2;
+  }
+
+  .summits__list{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+    overflow: auto;
+    .summits__item{
+      width: 100px;
+      height:150px;
+      background: $grad-test-1;
+      flex: 0 0 auto;
+    }
+  }
+
+  .card{
+    display: flex;
+    .card__title{
+      color: red;
+    }
+  }
 }
