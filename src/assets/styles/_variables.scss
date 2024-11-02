@@ -11,7 +11,6 @@ $uoc-masterbrand: #088a9f;
 $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
 
 $mqMinWidth: 420px;
+$mqDesktopWidth: 992px;
 
-$grad-test-1: repeating-linear-gradient(45deg, #e4fff0, #e4fff0 10px, #aea7a0 10px, #aea7a0 20px);
-$grad-test-2: repeating-linear-gradient(45deg, #ffb2df, #ffb2df 10px, #d38db9 10px, #d38db9 20px);
-$grad-test-3: repeating-linear-gradient(45deg, #089f51, #089f51 10px, #184e6f 10px, #184e6f 20px);
+$maxWidth: 1000px;

@@ -5,49 +5,112 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100;1,400&family=Open+Sans:wght@300&family=Roboto:wght@100;300&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
     <title>UOC Boilerplate</title>
   </head>
   <body>
 
+    <include src="./views/header.html"></include>
+    <include src="./views/left-menu.html"></include>
 
-<header class="header">
-  <div class="cover"></div>
-</header>
-<div class="content">
-  <div class="history">
-    <p class="history__text"></p>
-    <div class="history__gallery"></div>
+<div class="cover">
+  <div class="cover__title">
+    <h1>
+      <span class="text-underline block">Sobre</span> 
+      <span>La Plana de Vic</span>
+    </h1>
+    
   </div>
-  <div class="summits">
-    <p class="summits__intro"></p>
-    <ul class="summits__list">
-      <li class="summits__item card">Bellmunt</li>
-      <li class="summits__item card">Puigsacalm</li>
-      <li class="summits__item card">Cabrera</li>
-      <li class="summits__item card">Castell dels Moros</li>
-    </ul>
-    <div class="summits__description"></div>
+  <div class="fog-effect-container">
+    <img src="/src/assets/images/fog1.png" style="--i: 1;">
+    <img src="/src/assets/images/fog2.png" style="--i: 2;">
+    <img src="/src/assets/images/fog3.png" style="--i: 3;">
+    <img src="/src/assets/images/fog4.png" style="--i: 4;">
+    <img src="/src/assets/images/fog5.png" style="--i: 5;">
+    <img src="/src/assets/images/fog1.png" style="--i: 10;">
+    <img src="/src/assets/images/fog2.png" style="--i: 9;">
+    <img src="/src/assets/images/fog3.png" style="--i: 8;">
+    <img src="/src/assets/images/fog4.png" style="--i: 7;">
+    <img src="/src/assets/images/fog5.png" style="--i: 6;">
   </div>
 </div>
-<footer>
 
-</footer>
+<div class="content">
+  <div id="sobre" class="content__section" data-aos="fade-up">
+    <h2 class="section__title">Sobre la plana de Vic</h2>
+    <p class="section__text">La Plana de Vic és una àmplia extensió situada a l’interior de la comarca d’Osona amb un entorn, un clima i una gastronomia particular</p>
+    
+   <div class="flex-list flex-list--center flex-list--wrap">
+    <div id="entorn" class="info-card info-card--entorn" data-aos="fade-in" onclick="expandCard('entorn')">
+      <div id="entorn_title"  class="info-card__title highlight-text">Entorn<i class="fa-solid fa-caret-down"></i>
+      </div>
+      <div id="entorn_text"  class="info-card__text">
+        <i class="fa-solid fa-mountain-sun" data-aos="flip-left"></i>
+        <p>L'<span class="highlight-text">entorn</span> ofereix diversitat de paissatges que van des de la plana a 500 metres sobre el nivell del mar fins a les muntanyes que l'envolten de més de 1200</p>
+      </div>
+    </div>
 
-    <!-- <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div> -->
+    <div id="clima" class="info-card info-card--clima" data-aos="fade-in" onclick="expandCard('clima')">
+      <div id="clima_title" class="info-card__title highlight-text">Clima<i class="fa-solid fa-caret-down"></i></div>
+      <div id="clima_text" class="info-card__text">
+        <i class="fa-solid fa-smog" data-aos="flip-left"></i>
+        <p>Té un <span class="highlight-text">clima</span> característic i durant els mesos de tardor i d'hivern una espessa capa de boira pot cobrir tota la plana</p>
+      </div>
+    </div>
 
+    <div id="gastronomia" class="info-card info-card--gastronomia" data-aos="fade-in" onclick="expandCard('gastronomia')"> 
+      <div id="gastronomia_title"  class="info-card__title highlight-text">Gastronomia<i class="fa-solid fa-caret-down"></i></div>
+      <div id="gastronomia_text"  class="info-card__text">
+        <i class="fa-solid fa-utensils" data-aos="flip-left"></i>
+        <p>També en destaca la seva <span class="highlight-text">gastronomia</span>, amb una llarga tradició popular i amb els embotits com a bandera</p>
+      </div>
+    </div>
+   </div>
+  
+  <figure class="section__figure">
+    <img class="section__image" src="/src/assets/images/46836939101_66f639b064_b.jpg" alt="Elephant at sunset" />
+    <figcaption>An elephant at sunset</figcaption>
+  </figure>
+</div>
+
+<div class="content__section" data-aos="fade-up">
+  <div class="section__intro">
+    <i class="fa-solid fa-place-of-worship place-card__icones" data-aos="flip-left"></i>
+    <p class="section__text">Per sobre d'aquest mar de boira emergeixen els santuaris de Bellmunt i Cabrera, situats al límit nord de la plana amb un restaruant per assaborir la gastronomia local juntament una gran panoràmica de la plana de Vic</p>
+  </div>
+  <div class="place-card justify-right"  id="bellmunt">
+    <div class="place-card__cover" data-aos="fade-right">
+      <img width="1200" height="896" src="/src/assets/images/bellmunt.jpg" class="place-card__img" alt="">
+    </div>
+    <div class="place-card__content place-card__content--align-right"  data-aos="fade-left">
+      <h2 class="place-card__title highlight-text">Santuari de Bellmunt</h2>
+      <i class="fa-solid fa-place-of-worship place-card__icones" data-aos="flip-left"></i>
+      <p class="place-card__text">A 1.246 metres d’altitud es pot veure tota la Plana de Vic, els Pirineus, la Vall del Ges i el Bisaura. Compta amb una ermita visitable i s'hi arriba a peu des de Sant Pere de Torelló així com amb una carretera d'una pendent i unes corves pronunciades.</p>
+      <i class="fa-solid fa-utensils place-card__icones" data-aos="flip-left"></i>
+      <div class="place-card__text">El restaurant obre cada dia i canvia els plats a cada estació per oferir productes locals i de temporada.</div>  
+    </div>
+  </div>
+
+  <div class="place-card" id="cabrera">
+    <div class="place-card__cover" data-aos="fade-left">
+      <img width="2000" height="1147" src="/src/assets/images/cabrera (2).jpg" class="place-card__img" alt="">
+
+    </div> 
+    <div class="place-card__content place-card__content--align-left"  data-aos="fade-right">
+      <h2 class="place-card__title highlight-text">Santuari de Cabrera</h2>
+      <i class="fa-solid fa-place-of-worship place-card__icones" data-aos="flip-left"></i>
+      <p class="place-card__text">Dins el municipi de l’Esquirol i situat en un pla dalt la Serra de Cabrera, a 1.294 mentreses pot veure una panoràmica de tot el Cabrerès, la Plana de Vic, les Guilleries i la Garrotxa. S'hi arriba a peu per un camí que ressegueix els cingles o a traves d'unes escales empinades de gairebé 300 esglaons.</p>
+      <i class="fa-solid fa-utensils place-card__icones" data-aos="flip-left"></i>
+      <p class="place-card__text">Malgrat el difícil accés el Santuari de Cabrera també ofereix servei de bar i restaurant de dijous a diumenge amb cuina tradicional i amb un arròs a la cassola que ja ha esdevingut marca pròpia del santuari.</p>
+    </div>
+  </div>
+
+</div>
+</div>
     <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <script type="module" src="./assets/scripts/main.js" defer></script><!-- do not remove this line! -->
   </body>
 </html>
