@@ -47,8 +47,8 @@
   margin-top: 10rem;
   background: url("/src/assets/images/silueta.png");
   background-repeat: no-repeat;
+  background-position-x: center;
   background-size: contain;
-
   @media (min-width: $mqDesktopWidth){
     background-size: cover;;
   }
@@ -62,7 +62,7 @@
     margin-top: 20%;
 
     @media (min-width: $mqDesktopWidth) {
-      margin-top: 18rem;
+      margin-top: 19rem;
     }    
 
     &__text{

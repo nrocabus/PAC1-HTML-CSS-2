@@ -125,6 +125,53 @@
   }
 }
 
+@keyframes light { // animació per l'efecte boira
+  0% {
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.peak{
+  display: flex;
+  flex-direction: column;
+  gap:.3rem;
+  align-items: center;
+  justify-content: flex-start;
+  width: 5rem;
+  height: 5rem;
+  color: $text-color;
+  &--cabrera{
+    position: absolute;
+    right: 8%;
+  }
+  &--bellmunt{
+    position: absolute;
+    left: 12%;
+  }
+}
+
+
+.light{
+  width:4px;
+  height:4px;
+  background-color: #fff;
+  border-radius:50%;
+  animation: light .9s ease-in infinite;
+  @media (min-width: $mqMinWidth){   
+    width:10px;
+    height:10px;
+  }
+ 
+}
+
+
+
 
 .logo{
   width:20%;
@@ -173,3 +220,5 @@
   border:solid 1px #fff;
   border-radius: 2rem;
 }
+
+
