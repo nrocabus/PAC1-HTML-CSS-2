@@ -6,7 +6,7 @@
 /**
  * Import variables
  */
-
+@import "functions";
 @import "variables";
 
 /**
@@ -25,12 +25,14 @@
  * It's a best practice to use a different partial for each page
  */
 
-@import "layouts/home";
 
-@import "base";
-@import "layout";
-@import "module";
-@import "state";
+@import "base/base";
+@import "layouts/layout";
+@import "modules/module";
+@import "modules/nav-menu";
+@import "modules/info-card";
+@import "modules/place-card";
+@import "states/state";
 // @import "theme";
 
 /**

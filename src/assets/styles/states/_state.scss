@@ -1,0 +1,55 @@
+a:hover{
+  color:#fff;
+  text-decoration: underline;
+}
+
+.info-card{
+  &:hover{
+    color:#fff;
+    box-shadow: #ffffff 0px 0px 20px 2px;
+  }
+  &--is-active{
+    aspect-ratio: 1;
+    @media(max-width: $mqMinWidth){
+      box-shadow: $text-color 0px 0px 20px 2px;
+    }
+  }
+
+  &__title--is-active{
+    display:none;
+  }
+
+  &__text--is-active{
+    display:flex;
+  }
+}
+
+
+.left-menu{
+  &--is-collapsed{
+    width:0%;
+  }
+}
+
+
+.text-underline{
+  text-decoration: underline;
+}
+
+
+.highlight-text{
+  font-family: $highlight-font;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+
+.justify-right{
+  justify-content:right;
+}
+
+
+.block{
+  display:block;
+}

@@ -1,0 +1,6 @@
+@use "sass:color";
+
+@function px-to-rem($px, $base: 16px) { // Convertir unitats de px a rem
+  @return #{calc($px / $base)}rem;
+}
+

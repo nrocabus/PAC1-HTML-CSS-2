@@ -1,0 +1,54 @@
+.nav__menu{
+  height:100%;
+  max-height:$maxWidth;
+
+  @media(max-width: $mqDesktopWidth){
+    display:none;
+  }
+
+  &--vertical{ // Menú lateral per la versió mòbil
+    padding: 1rem;
+    margin-top: px-to-rem(90px);
+  }
+}
+  
+
+.nav__menu-item{
+  padding: 0 2rem;
+  font-size: 1.3rem;
+  color:$text-color;
+  text-align: center;
+  background-color: #000;
+  border-radius:.5rem;
+
+  &--vertical{
+    padding: 2rem;
+  }
+}
+
+    
+.header__bars-menu{
+  display: flex;
+  align-items: center;
+  width: 33%;
+  height:px-to-rem(50px);
+  padding-left: 3rem;
+
+  @media (min-width: $mqDesktopWidth) {
+    display:none;
+  }
+}
+
+.left-menu{ //menu lateral per dispositius mobils
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index:2;
+  width: 80%;
+  height: 100vh;
+  overflow:hidden;
+  background-color: rgba(0, 0, 0, .5);
+  backdrop-filter: blur(5px);
+  box-shadow: 1px 0px 20px 0px #000;
+  transition:.2s;
+}

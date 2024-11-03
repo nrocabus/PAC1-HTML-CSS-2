@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="ca">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <title>Sobre la plana de vic</title>    
+    <!-- <title>UOC Boilerplate</title> -->
+    <meta name="description" content="Informació sobre els santuaris que queden sobre la plana de vic">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100;1,400&family=Open+Sans:wght@300&family=Roboto:wght@100;300&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
-    <title>UOC Boilerplate</title>
   </head>
   <body>
 
     <include src="./views/header.html"></include>
     <include src="./views/left-menu.html"></include>
 
-<div class="cover">
+<div class="layout-cover">
   <div class="cover__title">
     <h1>
       <span class="text-underline block">Sobre</span> 
@@ -25,27 +26,29 @@
     
   </div>
   <div class="fog-effect-container">
-    <img src="/src/assets/images/fog1.png" style="--i: 1;">
-    <img src="/src/assets/images/fog2.png" style="--i: 2;">
-    <img src="/src/assets/images/fog3.png" style="--i: 3;">
-    <img src="/src/assets/images/fog4.png" style="--i: 4;">
-    <img src="/src/assets/images/fog5.png" style="--i: 5;">
-    <img src="/src/assets/images/fog1.png" style="--i: 10;">
-    <img src="/src/assets/images/fog2.png" style="--i: 9;">
-    <img src="/src/assets/images/fog3.png" style="--i: 8;">
-    <img src="/src/assets/images/fog4.png" style="--i: 7;">
-    <img src="/src/assets/images/fog5.png" style="--i: 6;">
+    <div class="fog-effect-container__img fog-effect-container__img--fog1" style="--i: 1;"></div>
+    <div class="fog-effect-container__img fog-effect-container__img--fog2" style="--i: 2;"></div>
+    <div class="fog-effect-container__img fog-effect-container__img--fog3" style="--i: 3;"></div>
+    <div class="fog-effect-container__img fog-effect-container__img--fog4" style="--i: 4;"></div>
+    <div class="fog-effect-container__img fog-effect-container__img--fog5" style="--i: 5;"></div>
+    <div class="fog-effect-container__img fog-effect-container__img--fog1" style="--i: 10;"></div>
+    <div class="fog-effect-container__img fog-effect-container__img--fog2" style="--i: 9;"></div>
+    <div class="fog-effect-container__img fog-effect-container__img--fog3" style="--i: 8;"></div>
+    <div class="fog-effect-container__img fog-effect-container__img--fog4" style="--i: 7;"></div>
+    <div class="fog-effect-container__img fog-effect-container__img--fog5" style="--i: 6;"></div>
   </div>
 </div>
 
-<div class="content">
-  <div id="sobre" class="content__section" data-aos="fade-up">
-    <h2 class="section__title">Sobre la plana de Vic</h2>
-    <p class="section__text">La Plana de Vic és una àmplia extensió situada a l’interior de la comarca d’Osona amb un entorn, un clima i una gastronomia particular</p>
+<div class="layout-content">
+  <div id="sobre" class="layout-content__section" data-aos="fade-up">
+    <div class="section__intro">
+      <h2 class="section__title">Sobre la plana de Vic</h2>
+      <p class="section__text">La Plana de Vic és una àmplia extensió situada a l’interior de la comarca d’Osona amb un entorn, un clima i una gastronomia particular</p>
+    </div>
     
    <div class="flex-list flex-list--center flex-list--wrap">
     <div id="entorn" class="info-card info-card--entorn" data-aos="fade-in" onclick="expandCard('entorn')">
-      <div id="entorn_title"  class="info-card__title highlight-text">Entorn<i class="fa-solid fa-caret-down"></i>
+    <div id="entorn_title"  class="info-card__title highlight-text">Entorn<i class="fa-solid fa-caret-down"></i>
       </div>
       <div id="entorn_text"  class="info-card__text">
         <i class="fa-solid fa-mountain-sun fa-2x" data-aos="flip-left"></i>
@@ -71,19 +74,19 @@
    </div>
   
   <figure class="section__figure">
-    <img class="section__image" src="/src/assets/images/46836939101_66f639b064_b.jpg" alt="Elephant at sunset" />
-    <figcaption>An elephant at sunset</figcaption>
+    <img class="section__image" src="/src/assets/images/46836939101_66f639b064_b.jpg" alt="Imatge de la plana de vic coberta per la boira">
+    <figcaption>La plana de vic coberta per la boira</figcaption>
   </figure>
 </div>
 
-<div class="content__section" data-aos="fade-up">
+<div class="layout-content__section" data-aos="fade-up">
   <div class="section__intro">
     <i class="fa-solid fa-place-of-worship place-card__icones" data-aos="flip-left"></i>
     <p class="section__text">Per sobre d'aquest mar de boira emergeixen els santuaris de Bellmunt i Cabrera, situats al límit nord de la plana amb un restaruant per assaborir la gastronomia local juntament una gran panoràmica de la plana de Vic</p>
   </div>
   <div class="place-card justify-right"  id="bellmunt">
     <div class="place-card__cover" data-aos="fade-right">
-      <img width="1200" height="896" src="/src/assets/images/bellmunt.jpg" class="place-card__img" alt="">
+      <img width="1200" height="896" src="/src/assets/images/bellmunt.jpg" class="place-card__img" alt="Imatge de bellmunt">
     </div>
     <div class="place-card__content place-card__content--align-right"  data-aos="fade-left">
       <h2 class="place-card__title highlight-text">Santuari de Bellmunt</h2>
@@ -96,7 +99,7 @@
 
   <div class="place-card" id="cabrera">
     <div class="place-card__cover" data-aos="fade-left">
-      <img width="2000" height="1147" src="/src/assets/images/cabrera (2).jpg" class="place-card__img" alt="">
+      <img width="2000" height="1147" src="/src/assets/images/Relleu_tabular_de_Cabrera.jpg" class="place-card__img" alt="Imatge del santuari de cabrera a sobre del cingle">
 
     </div> 
     <div class="place-card__content place-card__content--align-left"  data-aos="fade-right">
@@ -111,6 +114,6 @@
 </div>
 </div>
     <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js" defer></script><!-- do not remove this line! -->
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>

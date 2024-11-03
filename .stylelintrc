@@ -1,21 +1,21 @@
 {
-    "plugins": [
+"plugins": [
 		"@stylistic/stylelint-plugin"
-	],
- "extends": [
-    "stylelint-config-recommended-scss",
-    "stylelint-config-recess-order"
+  ],
+"extends": [
+  "stylelint-config-recommended-scss",
+  "stylelint-config-recess-order"
 ],
- "rules": {
-    "selector-class-pattern": "^.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$",
-    "no-duplicate-selectors": true,
-    "no-irregular-whitespace": true,
-    "@stylistic/indentation": 2,
-    "@stylistic/declaration-block-semicolon-newline-after": "always", 
-    "@stylistic/max-line-length": [80],
-    "@stylistic/selector-list-comma-newline-after": "always",
-    "selector-max-id": 0,
-    "selector-max-compound-selectors": 2,
-    "comment-whitespace-inside": "always"
- }
+"rules": {
+  "selector-class-pattern": "^.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$",
+  "no-duplicate-selectors": true,
+  "no-irregular-whitespace": true,
+  "@stylistic/indentation": 2,
+  "@stylistic/declaration-block-semicolon-newline-after": "always", 
+  "@stylistic/max-line-length": [80],
+  "@stylistic/selector-list-comma-newline-after": "always",
+  "selector-max-id": 0,
+  "selector-max-compound-selectors": 2,
+  "comment-whitespace-inside": "always"
+}
 }

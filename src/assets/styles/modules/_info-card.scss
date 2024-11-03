@@ -1,0 +1,65 @@
+.card{
+  display: flex;
+
+  &__title{
+    width:100%;
+    text-align:center;
+  }
+}
+
+
+.info-card{
+  width: 90%;
+  overflow:hidden;
+  background-position: center;
+  background-size: cover;
+  border: solid 1px #fff;
+  border-radius: 1rem;
+
+  @media (min-width: $mqMinWidth){
+    width: px-to-rem(250px);
+    aspect-ratio:1;
+  }
+
+  &__title{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width:100%;
+    height:100%;
+    padding: 2rem 0;
+    background: rgba(0, 0, 0, 0.7);
+
+    @media (min-width: $mqMinWidth){
+      display:none;
+    }
+  }
+
+  &__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height:100%;
+    padding: 2rem 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    @media(max-width: $mqMinWidth){
+      display:none;
+    }
+  }
+
+  &--entorn{
+    background-image: url("/src/assets/images/Fageda_d\'en_Jordà_seen_by_Wiros_10.jpg");
+  }
+
+  &--clima{
+    background-image: url("/src/assets/images/forest-fog-nature-winter-45222.jpg");
+  }
+
+  &--gastronomia{
+    background-image: url("/src/assets/images/free-photo-of-round-sausage-in-close-up-view.jpg");
+  }
+}

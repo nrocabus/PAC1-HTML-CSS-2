@@ -6,11 +6,13 @@ $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 $font-family-serif: "Georgia", "Times New Roman", serif;
 
 // $uoc-corporate: #000078;
-$uoc-corporate: #000078;
-$uoc-masterbrand: #088a9f;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+// $uoc-corporate: #000078;
+// $uoc-masterbrand: #088a9f;
+// $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
 
+$highlight-font: "Spectral", serif;
+$text-color: #F6E4D3;
+$text-color-title: #2B1B12;
 $mqMinWidth: 420px;
 $mqDesktopWidth: 992px;
-
 $maxWidth: 1000px;

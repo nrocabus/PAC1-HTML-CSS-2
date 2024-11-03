@@ -29,9 +29,9 @@ function toggleClass(idname, classname) {
 }
 
 function expandCard(idname){
-  document.getElementById(idname).classList.toggle("info-card--active");
-  document.getElementById(idname+"_title").classList.toggle("info-card__title--active");
-  document.getElementById(idname+"_text").classList.toggle("info-card__text--active");
+  document.getElementById(idname).classList.toggle("info-card--is-active");
+  document.getElementById(idname+"_title").classList.toggle("info-card__title--is-active");
+  document.getElementById(idname+"_text").classList.toggle("info-card__text--is-active");
 }
 
 window.toggleClass = toggleClass;
