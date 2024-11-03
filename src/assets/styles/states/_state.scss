@@ -5,8 +5,11 @@ a:hover{
 
 .info-card{
   &:hover{
-    color:#fff;
-    box-shadow: #ffffff 0px 0px 20px 2px;
+    @media (max-width:$mqMinWidth){
+      color:#fff;
+      box-shadow: #ffffff 0px 0px 20px 2px;  
+    }
+
   }
   &--is-active{
     aspect-ratio: 1;
